@@ -1,6 +1,12 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
+    Scanner sc = new Scanner(System.in);
+    String input = sc.nextLine();
+    var x = sc.nextDouble();
+    System.out.println(x);
+
+
     String myString = "my string";
 
 //    if (myString.length() == 0) {
