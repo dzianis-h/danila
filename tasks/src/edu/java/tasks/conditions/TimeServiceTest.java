@@ -3,14 +3,13 @@ package edu.java.tasks.conditions;
 import edu.java.tasks.util.TestResults;
 
 import static edu.java.tasks.util.Helper.printTestResults;
-
 public class TimeServiceTest {
     private final String testName = this.getClass().getSimpleName();
 
     private int testsPassed = 0;
     private int testsFailed = 0;
 
-    public static void main() {
+    public static void main(String[] args) {
         printTestResults(new TimeServiceTest().run());
     }
 
