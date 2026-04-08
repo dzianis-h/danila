@@ -1,6 +1,5 @@
 package edu.java.tasks.conditions;
 
-import static java.lang.System.*;
 
 public class TimeService {
 
