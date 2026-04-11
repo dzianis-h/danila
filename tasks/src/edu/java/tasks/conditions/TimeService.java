@@ -9,11 +9,11 @@ public class TimeService {
 
 
     public boolean isInRange(int start,int now,int end) {
-        if (start > end) {
+        if (start >= end) {
             return false;
-        } else if (start == end) {
+        }else if (start >= now) {
             return false;
-        } else if (start < now) {
+        }else if (end <= now) {
             return false;
         }else return true;
     }

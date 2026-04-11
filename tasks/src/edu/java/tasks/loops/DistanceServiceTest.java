@@ -14,7 +14,7 @@ public class DistanceServiceTest {
     private int testsPassed = 0;
     private int testsFailed = 0;
 
-    public static void main() {
+    public static void main(String[] args) {
         printTestResults(new DistanceServiceTest().run());
     }
 
