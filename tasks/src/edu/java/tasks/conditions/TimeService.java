@@ -3,19 +3,30 @@ package edu.java.tasks.conditions;
 
 public class TimeService {
 
-    // тут нужно проверить что время now в миллисекундах входит в отрезок [start; end)
+    // тут нужно проверить что время t1 в миллисекундах входит в отрезок [start; end)
     // то есть от start до end, включая start но не включая end
     // если отрезок не валидный (например что start больше end), то возвращаться false
 
 
-    public boolean isInRange(int start,int now,int end) {
+    // t1 - 9
+    // start - 10
+    // end - 15
+    // t1 - 14.9999999
+    public boolean isInRange(int start, int t1, int end) {
         if (start >= end) {
             return false;
-        }else if (start >= now) {
+        }
+
+        //        return start <= t1 && t1 < end;
+        if (start > t1) {
             return false;
-        }else if (end <= now) {
+        }
+
+        if (end <= t1) {
             return false;
-        }else return true;
+        }
+
+        return true;
     }
 }
 
